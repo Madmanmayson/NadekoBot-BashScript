@@ -6,7 +6,7 @@ youtube-dl -U
 
 sleep 5s
 cd "$root/NadekoBot"
-dotnet restore && dotnet build --configuration Release
+dotnet restore && dotnet build -c Release
 
 while :; do cd "$root/NadekoBot/src/NadekoBot" && dotnet run -c Release; sleep 5s; done
 echo ""
